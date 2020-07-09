@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWildFlyController {
 
 
-    @RequestMapping("hello")
+    @RequestMapping("v2/catalog")
     public String sayHello(){
-        return ("Hello, SpringBoot on Wildfly");
+        return ("{\"services\":[{\"id\":\"avx-email-service\",\"name\":\"avx-email-service\",\"description\":\"appviewx mailing service\",\"bindable\":false,\"plans\":[{\"id\":\"appviewx-service-plan-id-1\",\"name\":\"standard\",\"description\":\"Standard appviewx service plan\",\"free\":true,\"schemas\":{\"service_instance\":{\"create\":{\"parameters\":{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"username\":{\"description\":\"Type the user name\",\"title\":\"User name\",\"type\":\"string\"}}}}}}}]}]}");
     }
 }

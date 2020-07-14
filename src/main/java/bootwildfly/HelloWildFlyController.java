@@ -37,6 +37,7 @@ public class HelloWildFlyController {
         		"                      \"description\": \"Select color\",\n" + 
         		"                      \"title\": \"Color\",\n" + 
         		"                      \"type\": \"string\",\n" + 
+        		"			\"enum\": [\"red\", \"blue\"]\n" +
         		"			\"enumNames\": [\"red\", \"blue\"]\n" + 
         		"                    }\n" + 
         		"                  }\n" + 

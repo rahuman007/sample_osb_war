@@ -10,9 +10,15 @@ public class HelloWildFlyController {
 	@Value("${MY_EXTERNAL_ENDPOINT}")
 	private String myExternalEndpoint;
 	
+	@Value("${MY_HOST}")
+	private String myHost;
+	
 	@RequestMapping("hello")
     public String say(){
-        return ("My property: " + myExternalEndpoint);
+		StringBuilder sBuilder = new StringBuilder();
+		sBuilder.append("myhost: ").append(myHost);
+		sBuilder.append("my propery: ").append(myExternalEndpoint);
+        return (sBuilder.toString());
     }
 	
     @RequestMapping("v2/catalog")

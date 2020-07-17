@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWildFlyController {
 
-	@Value("#{systemEnvironment['MY_EXTERNAL_ENDPOINT']}")
+	@Value("${MY_EXTERNAL_ENDPOINT}")
 	private String myExternalEndpoint;
 	
 	@RequestMapping("hello")

@@ -15,7 +15,7 @@ public class HelloWildFlyController {
 	
 	@RequestMapping("hello")
     public String say(){
-        return ("My property: " + myExternalEndpoint + "\nMy host:" + host);
+        return ("My property: " + host);
     }
 	
     @RequestMapping("v2/catalog")

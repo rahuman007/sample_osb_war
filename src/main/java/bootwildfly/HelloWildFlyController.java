@@ -10,7 +10,7 @@ public class HelloWildFlyController {
 	@Value("#{systemEnvironment['MY_EXTERNAL_ENDPOINT']}")
 	private String myExternalEndpoint;
 	
-	@Value("#{my.host}")
+	@Value("${my.host}")
 	private String host;
 	
 	@RequestMapping("hello")

@@ -13,11 +13,18 @@ public class HelloWildFlyController {
 	@Value("${MY_HOST}")
 	private String myHost;
 	
+	@Value("${APPVIEWX_USERNAME}")
+	private String username;
+	
+	@Value("${APPVIEWX_PASSWORD}")
+	private String password;
+	
 	@RequestMapping("hello")
     public String say() {
 		StringBuilder sBuilder = new StringBuilder();
 		sBuilder.append("myhost: ").append(myHost);
-		sBuilder.append("my propery: ").append(myExternalEndpoint);
+		sBuilder.append("my propery: ").append(myExternalEndpoint)
+			.append("username: ").append(username).append("password: ").append(password);
 		System.out.println(sBuilder.toString());
         return ("My property: " + myExternalEndpoint);
     }

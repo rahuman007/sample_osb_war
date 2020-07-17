@@ -10,9 +10,12 @@ public class HelloWildFlyController {
 	@Value("#{systemEnvironment['MY_EXTERNAL_ENDPOINT']}")
 	private String myExternalEndpoint;
 	
+	@Value("#{my.host}")
+	private String host;
+	
 	@RequestMapping("hello")
     public String say(){
-        return ("My property: " + myExternalEndpoint);
+        return ("My property: " + myExternalEndpoint + "\nMy host:" + host);
     }
 	
     @RequestMapping("v2/catalog")

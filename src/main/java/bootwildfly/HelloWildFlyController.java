@@ -14,11 +14,12 @@ public class HelloWildFlyController {
 	private String myHost;
 	
 	@RequestMapping("hello")
-    public String say(){
+    public String say() {
 		StringBuilder sBuilder = new StringBuilder();
 		sBuilder.append("myhost: ").append(myHost);
 		sBuilder.append("my propery: ").append(myExternalEndpoint);
-        return (sBuilder.toString());
+		System.out.println(sBuilder.toString());
+        return ("My property: " + myExternalEndpoint);
     }
 	
     @RequestMapping("v2/catalog")

@@ -31,7 +31,7 @@ public class HelloWildFlyController {
 	
     @RequestMapping("v2/catalog")
     public String sayHello(){
-        return ("{\"services\":[{\"id\":\"5f1011f4b958f463955d2b6e5\",\"name\":\"create-http-monitor\",\"description\":\"Create LTM HTTP Monitor\",\"bindable\":false,\"plans\":[{\"id\":\"appviewx-plan-15949062993101\",\"name\":\"standard\",\"description\":\"Standard service plan\",\"free\":true,\"schemas\":{\"service_instance\":{\"create\":{\"parameters\":{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"username\":{\"title\":\"User name\",\"description\":\"Type the user name.\",\"type\":\"string\"},\"key\":{\"title\":\"Access key\",\"description\":\"Type your access key.\",\"type\":\"string\"}},\"required\":[\"username\"],\"form\":[\"key\":{\"type\":\"textarea\"}]}}}}}],\"metadata\":{\"workflowName\":\"Create LTM HTTP Monitor\"}}]}");
+        return ("{\"services\":[{\"id\":\"5f1011f4b958f463955d2b6e5\",\"name\":\"create-http-monitor\",\"description\":\"Create LTM HTTP Monitor\",\"bindable\":false,\"plans\":[{\"id\":\"appviewx-plan-15949062993101\",\"name\":\"standard\",\"description\":\"Standard service plan\",\"free\":true,\"schemas\":{\"service_instance\":{\"create\":{\"parameters\":{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"username\":{\"title\":\"User name\",\"description\":\"Type the user name.\",\"type\":\"string\"},\"key\":{\"title\":\"Access key\",\"description\":\"Type your access key.\",\"type\":\"string\"}},\"required\":[\"username\"]}}}}}],\"metadata\":{\"workflowName\":\"Create LTM HTTP Monitor\"}}]}");
     }
     
 }
